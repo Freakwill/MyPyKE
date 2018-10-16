@@ -1,0 +1,13 @@
+direct_job
+    foreach
+        knowledge.master($person, $language)
+    assert
+        knowledge.get_job($person, (job, $language))
+
+
+direct_learning
+    foreach
+        knowledge.is_learning($person, $language)
+    assert
+        knowledge.fall_love_in($person, $language)
+        knowledge.like_talking($person, $language)
